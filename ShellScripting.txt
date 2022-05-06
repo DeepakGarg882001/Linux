@@ -1,0 +1,103 @@
+------ Let's Start Shell Scripting -------
+
+  Hardware <-> Kernel <-> Shell <-> Terminal <-> GUI <-> User
+
+
+  Shell Scripting is a method to run multiple commands one by one automatically through a Shell Script Programm File (i.e fileName.sh ) 
+
+
+  # we can create a ShellScript by using ` cat ` or ` touch ` commands.
+
+      ->  $ cat >> NewFile.sh 
+
+      ->  $ touch NewFile.sh
+
+
+  # we can exicute this ShellScript file ( NewFile.sh ) by using ` sh ` command.
+
+      -> $ sh NewFile.sh
+
+
+  # to open any file in Vim Editor from Terminal We can use command ` vi fileName ` .
+
+      -> $ vi NewFile.sh 
+
+
+  # if we want to Write something in file from Vim Editor , then Press the key INSERT from keyboard.
+
+      -> Press INSERT Key  --> Switch to Insert/Writing Mode.
+
+
+  # if we want to save the content which we have written in this file from Vim Editor.
+
+      -> Press ESC key   --> Exit from Insert/Writing Mode.
+
+      -> Press ` : wq! ` --> this command will save the data and exit from Vim.
+
+      -> Press ` : q `   --> this command will exit from the Vim ,But it will not save the Data into file , Here we can get data Loss.
+
+
+
+  # ShellScripting  Language ::
+       
+      -> ` echo ` --> to print something In Terminal Screen.
+          
+                 echo Hello Friends
+
+                 echo " Hello Friend's "
+                 
+
+      -> ` read ` --> this is used to take input from user in Terminal Screen.
+              
+                 echo " Enter your name : "
+                 read name
+                 echo Your Name is : $name 
+           
+           # Here we did not make/define any variable Earlier using the command `read `,So `read` command creates a new varible and assign the value which it takes as Input from user .
+
+           # Here the Symbole ` $ ` is used to access the varible, i.e InterPretter can get to Know that it is a Variable or string.
+
+      # to make variables in ShellScript , Just write the name of variable and assigin the value to it which we want.
+                
+                echo Enter your Name : 
+                
+                name=""
+
+                read name
+                echo Your Name is $name
+
+            # Here we have created a variable firstly before using the ` read ` command and assign a initial value Empty as a String.
+
+      # How to use ArithMatic Operators between two or more variables
+
+                A=0
+                B=0
+
+                echo Enter the value of A : 
+                read A 
+
+                echo Enter the value of B :
+                read B 
+
+                echo Sum of A+B is : `expr $A + $B `
+
+                echo Difference of A-B is : `expr $A - $B `
+
+                echo Multiplication  of "A*B" is : `expr $A /* $B `
+
+                echo Division  of A/B is : `expr $A / $B `
+
+            # Here we have created Two variables initialy and assigin them a value 0. 
+              After it user Enter the Values of A & B which updates the current value of Variable.
+
+            # Here we uses `expr Operations `, that mean  ` ` indicates that we want to perform an Opetation, `expr ` indicates that expr --> expression_is    
+
+            # Here Multiplication Operator is used as ` \* ` not like ` * `
+
+            
+
+
+
+
+
+     
