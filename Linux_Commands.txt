@@ -1,0 +1,211 @@
+    --------------  Let's Start -----------------
+
+
+     -> ` ls ` :   => ls means list
+                
+                             $ ls
+
+                   => we can see all the hiddenfiles also
+                             $ ls -a         
+
+                   => to see detail Information of each file as  a Long list (ls -l) 
+                             $ ls -l
+
+                   => to Show all hidden files with details use this
+                             $ ls -l -a          
+
+                   => to Know which is Directory or a file use this
+                             $ ls -F 
+
+                   => to show all the Directory/Files in reverse order
+                             $ ls -r  
+
+                   => want to get all the Information of each Directory/files along with its subDirectory
+                             $ ls -R      
+
+                   => sort all the Directory/File based on size . large size will be upper
+                             $ ls -S       
+                                OR
+                             $ ls -l -S   
+
+                   => want to Know that how many Files a Directory have
+                             $ ls -l directoryName                                
+    
+     -> SpecialCharacters : => ` * `  -> MultiCharacters
+                            => ` ? `  -> SingleCharacters
+                            => ` [] ` -> Range  
+
+                   Eg. =>
+
+                    => Find all the Files which have .txt extension in current Directory
+                             $ ls *.txt
+                             
+                            # this will five all the files name which have .txt extension in last,No matters how many Characters it have in FileName
+                              because here we are using ` * ` . i.e MultiCharacters
+
+                    => Find all the Files which Have any extension but file name should be ` a `
+                             $ ls a.*
+
+                    => find all the Files which have single Character in FileName
+                             $ ls ?.*
+
+                    => find all the Files which have single Character but have .txt extension
+                             $ ls ?.txt
+
+                    => find all the files Which have can have any Character from a-z and FileName can have any amount of Character
+                             $ ls [a-z]*.txt
+                             $ ls [a-z]*.*
+                             $ ls [a-z]?.txt                                     
+
+
+
+
+    # File commands
+     
+     -> ` touch `: => touch command is used to create a new file 
+                      
+                              $ touch NewFileName
+
+                   => we can create a Hidden file also form it
+
+                              $ touch .hiddenfile        
+
+ 
+
+
+     -> ` cat ` :  => cat command is used to Show all the content of a File.
+                      
+                              $ cat FileName
+
+
+                   => We can Print/Show the Data/content of more than Two files at same time from same command also.
+                      
+                              $ cat FileName1 FileName2 
+                        
+                        This method is Known as Concatinate the Files
+
+
+                   => cat command is also used to create NewFile.
+                      Here we can add Data to the File also.
+                      To save the current Data and EXIT from it ,Just Press( Ctrl + D ). 
+
+                              $ cat > NewFileName
+
+
+                   => cat command is also used to add More data from ending of the file. 
+
+                              $ cat >> Filename
+                                     OR
+                              $ cat >> NewFileName
+
+                        Here we can create a NewFile also.
+
+                
+              
+
+
+     -> ` cp ` :   => cp means COPY The File
+                              
+                              $ cp Curr_FileName  CopedFileName
+
+                        Here at the place of CopedFileName we can also add the path of CopedFileName with respect to CurrentFile.
+
+                   => By Using this Method , we copy the file to other Directory location also
+
+                              $ cp Curr_FileName  ../Desktop/CopedFileName  
+
+                        Here we have Both the files safe. Nothing Happens to the Data of any one of file   
+
+
+
+
+
+
+     -> ` mv ` :   => mv means MOVE The File OR  rename the file FileName
+
+                               $ mv AnyFileName RenamedFile
+
+                          Actually Here, what we are doing, we are Trying to Rename any Existing File.
+
+                   => mv ` command is similar to ` cp ` command i.e it makes a copy of current file to other location  
+                      of Directory/ in same Directory, By the name of file which we want To be ReNamed. 
+                      But ` mv `  command delete the initial File. i.e we get only one Copy of File     
+
+
+                               $ mv AnyFileName ../Desktop/WorkSpace/RenamedFile              
+
+                   => with the help of this command we can Rename / move the Directory also
+
+                               $ mv WorkSpace   ../WorkSpace
+
+                               $ mv WorkSpace   ../UserWorkSpace
+
+                               $ mv WorkSpace  UserWorkSpace
+
+
+
+
+     -> ` rm ` :   => rm means to Remove the file / Directory i.e Delete it.
+                        rm will remove only if the Directory/file is Empty. if it have some data in it then it will not WorkSpace
+
+                               $ touch FirstFile
+                               $ rm FirstFile
+
+                                     OR
+
+                               $ mkdir Garg
+                               $ rm Garg
+                        
+                   => If file/Directory contains some data in it then also we can remove.
+
+                               $ rm -r FirstFile
+                               $ rm -r WorkSpace    
+
+
+
+
+# Directory Commands
+      
+     -> ` mkdir `: => mkdir means Make a new Directory/Folder
+
+                                $ mkdir NewFolder  
+
+                   => we cam create multiple Directory at same time
+
+                                $ mkdir Folder1 Folder2 Folder3     
+
+
+
+
+     -> ` cd ` :  => cd means Change Directory
+                     it is used to traverse from one Directory to another Directory.
+                                
+                                $ mkdir NewFolder
+
+                                $ cd ./NewFolder
+
+                  => to come back from CurrentDirectory use ` ../ `
+
+                                $ cd ../
+                  
+                  => if you want to come back to Home_Root folder then just enter cd
+
+                                $ cd
+                                  OR
+                                $ cd ~  
+
+
+
+     -> ` rmdir` : => rmdir means Remove Directory
+                      This command can delete only Empty Directory
+                                $ mkdir GargSpace
+
+                                $ rmdir GargSpace  
+
+                                                     
+
+
+    -> ` pwd ` :   => pwd means path of current working Directory       
+
+                                $ pwd
+
