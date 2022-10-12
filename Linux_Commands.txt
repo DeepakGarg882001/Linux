@@ -1,4 +1,4 @@
-    --------------  Let's Start -----------------
+                                          --------------  Let's Start -----------------
 
 
      -> ` ls ` :   => ls means list
@@ -40,7 +40,7 @@
                     => Find all the Files which have .txt extension in current Directory
                              $ ls *.txt
                              
-                            # this will five all the files name which have .txt extension in last,No matters how many Characters it have in FileName
+                            # this will give all the files name which have .txt extension in last,No matters how many Characters it have in FileName
                               because here we are using ` * ` . i.e MultiCharacters
 
                     => Find all the Files which Have any extension but file name should be ` a `
@@ -62,41 +62,41 @@
 
     # File commands
      
-     -> ` touch `: => touch command is used to create a new file 
+     -> ` touch `:  => touch command is used to create a new file 
                       
-                              $ touch NewFileName
+                             $ touch NewFileName
 
-                   => we can create a Hidden file also form it
+                    => we can create a Hidden file also form it
 
-                              $ touch .hiddenfile        
+                             $ touch .hiddenfile        
 
  
 
 
-     -> ` cat ` :  => cat command is used to Show all the content of a File.
+     -> ` cat ` :   => cat command is used to Show all the content of a File.
                       
-                              $ cat FileName
+                             $ cat FileName
 
 
-                   => We can Print/Show the Data/content of more than Two files at same time from same command also.
+                    => We can Print/Show the Data/content of more than Two files at same time from same command also.
                       
-                              $ cat FileName1 FileName2 
+                             $ cat FileName1 FileName2 
                         
                         This method is Known as Concatinate the Files
 
 
-                   => cat command is also used to create NewFile.
-                      Here we can add Data to the File also.
-                      To save the current Data and EXIT from it ,Just Press( Ctrl + D ). 
+                    => cat command is also used to create NewFile.
+                       Here we can add Data to the File also.
+                       To save the current Data and EXIT from it ,Just Press( Ctrl + D ). 
 
-                              $ cat > NewFileName
+                             $ cat > NewFileName
 
 
-                   => cat command is also used to add More data from ending of the file. 
+                    => cat command is also used to add More data from ending of the file. 
 
-                              $ cat >> Filename
+                             $ cat >> Filename
                                      OR
-                              $ cat >> NewFileName
+                             $ cat >> NewFileName
 
                         Here we can create a NewFile also.
 
@@ -104,15 +104,15 @@
               
 
 
-     -> ` cp ` :   => cp means COPY The File
+     -> ` cp ` :    => cp means COPY The File
                               
-                              $ cp Curr_FileName  CopedFileName
+                             $ cp Curr_FileName  CopedFileName
 
                         Here at the place of CopedFileName we can also add the path of CopedFileName with respect to CurrentFile.
 
-                   => By Using this Method , we copy the file to other Directory location also
+                    => By Using this Method , we copy the file to other Directory location also
 
-                              $ cp Curr_FileName  ../Desktop/CopedFileName  
+                             $ cp Curr_FileName  ../Desktop/CopedFileName  
 
                         Here we have Both the files safe. Nothing Happens to the Data of any one of file   
 
@@ -121,91 +121,195 @@
 
 
 
-     -> ` mv ` :   => mv means MOVE The File OR  rename the file FileName
+     -> ` mv ` :    => mv means MOVE The File OR  rename the file FileName
 
-                               $ mv AnyFileName RenamedFile
+                             $ mv AnyFileName RenamedFile
 
                           Actually Here, what we are doing, we are Trying to Rename any Existing File.
 
-                   => mv ` command is similar to ` cp ` command i.e it makes a copy of current file to other location  
-                      of Directory/ in same Directory, By the name of file which we want To be ReNamed. 
-                      But ` mv `  command delete the initial File. i.e we get only one Copy of File     
+                    => mv ` command is similar to ` cp ` command i.e it makes a copy of current file to other location  
+                       of Directory/ in same Directory, By the name of file which we want To be ReNamed. 
+                       But ` mv `  command delete the initial File. i.e we get only one Copy of File     
 
 
-                               $ mv AnyFileName ../Desktop/WorkSpace/RenamedFile              
+                             $ mv AnyFileName ../Desktop/WorkSpace/RenamedFile              
 
-                   => with the help of this command we can Rename / move the Directory also
+                    => with the help of this command we can Rename / move the Directory also
 
-                               $ mv WorkSpace   ../WorkSpace
+                             $ mv WorkSpace   ../WorkSpace
 
-                               $ mv WorkSpace   ../UserWorkSpace
+                             $ mv WorkSpace   ../UserWorkSpace
 
-                               $ mv WorkSpace  UserWorkSpace
-
-
+                             $ mv WorkSpace  UserWorkSpace
 
 
-     -> ` rm ` :   => rm means to Remove the file / Directory i.e Delete it.
-                        rm will remove only if the Directory/file is Empty. if it have some data in it then it will not WorkSpace
 
-                               $ touch FirstFile
-                               $ rm FirstFile
 
-                                     OR
+     -> ` rm ` :    => rm means to Remove the file / Directory i.e Delete it.
+                       rm will remove only if the Directory/file is Empty. if it have some data in it then it will not WorkSpace
 
-                               $ mkdir Garg
-                               $ rm Garg
+                             $ touch FirstFile
+                             $ rm FirstFile
+
+                                   OR
+
+                             $ mkdir Garg
+                             $ rm Garg
                         
-                   => If file/Directory contains some data in it then also we can remove.
+                    => If file/Directory contains some data in it then also we can remove.
 
-                               $ rm -r FirstFile
-                               $ rm -r WorkSpace    
+                             $ rm -r FirstFile
+                             $ rm -r WorkSpace    
 
 
 
 
 # Directory Commands
       
-     -> ` mkdir `: => mkdir means Make a new Directory/Folder
+     -> ` mkdir `:  => mkdir means Make a new Directory/Folder
 
-                                $ mkdir NewFolder  
+                             $ mkdir NewFolder  
 
-                   => we cam create multiple Directory at same time
+                    => we cam create multiple Directory at same time
 
-                                $ mkdir Folder1 Folder2 Folder3     
-
-
+                             $ mkdir Folder1 Folder2 Folder3     
 
 
-     -> ` cd ` :  => cd means Change Directory
-                     it is used to traverse from one Directory to another Directory.
+
+
+     -> ` cd ` :    => cd means Change Directory
+                       it is used to traverse from one Directory to another Directory.
                                 
-                                $ mkdir NewFolder
+                             $ mkdir NewFolder
 
-                                $ cd ./NewFolder
+                             $ cd ./NewFolder
 
-                  => to come back from CurrentDirectory use ` ../ `
+                    => to come back from CurrentDirectory use ` ../ `
 
-                                $ cd ../
+                             $ cd ../
                   
-                  => if you want to come back to Home_Root folder then just enter cd
+                    => if you want to come back to Home_Root folder then just enter cd
 
-                                $ cd
-                                  OR
-                                $ cd ~  
+                             $ cd
+                               OR
+                             $ cd ~  
 
 
 
-     -> ` rmdir` : => rmdir means Remove Directory
-                      This command can delete only Empty Directory
-                                $ mkdir GargSpace
+     -> ` rmdir` :  => rmdir means Remove Directory
+                       This command can delete only Empty Directory
+                             $ mkdir GargSpace
 
-                                $ rmdir GargSpace  
+                             $ rmdir GargSpace  
 
                                                      
 
 
-    -> ` pwd ` :   => pwd means path of current working Directory       
+    -> ` pwd ` :    => pwd means path of current working Directory       
 
-                                $ pwd
+                             $ pwd
+
+
+
+    -> ` head ` :   => head command is similar to ` cat ` which is used to print` n `lines of file content from Top to Bottom i.e Starting Lines    
+                             $ head -n 20 FileName
+                                    OR
+                             $ head -20 FileName
+
+                                here 20 is the number of line which we want to print
+
+                    => By default head command have the value of `n is 10`
+                             $ head FileName
+
+
+
+     -> ` tail ` :  => tail is also similar to `head` command , but it print the content of a file from Bottom to Top i.e Last Lines
+                             $ tail -n 20 FileName
+                                    OR
+                             $ tail -20 FileName
+
+                    => By default tail command have the value of `n is 10` 
+                             $ tail FileName
+
+     
+
+             # Let we have a file and it have 70 lines init. I want to show only the lines 35-40.
+               try to write a command for it
+             Sol: 
+              Step1 =>  Here we have Two options and we have to choose based on the problem
+                         i.e 
+                         1. Print the first 40 lines ( 1 - 40 )
+                                OR
+                         2. Print the Last lines from line 35 ( 35 - 70 )
+
+              Step2 => Now take the previous command output as an Input for the second command, using the pipe Symbole ( | ) 
+
+              Step3 => Now write a one anothe command to cut the required lines from the previous output and Show only the 
+                        required lines
+                        i.e
+                        1. Print the last 5 lines from the Input , If input have ( 1 - 40 ) lines
+                        2. Print the first 5 lines from the Input, If input have ( 35 - 40 ) lines 
+
+                             $ head -40 Filename | tail -5
+                                  OR
+                             $ tail -35 FileName | head -5
+
+
+             # We can also use these command with another commands
+               Like 
+                             $ ls -l | head -5
+                             $ ls -l | tail -7
+
+
+
+     -> ` more ` :  => This command is also used to Show the content of file like the ` cat ` command does.
+
+                    => The Difference is thet here it Show/Print the in Pages 
+                       i.e it does not Show all the content at a time
+                          it shows the content by dividing the whole content into Pages
+                          here page size means the size of our Terminal Screen 
+                          it will show the content as much which can be print at screen at a time     
+
+                             $ more FileName
+
+                    => To move/ switch to next page , just press the key ` SPACEBAR `
+
+                    => To navigate/move Line by Line , just press the key ` Enter `
+
+                    => If you want to Quite from this , just press the key ` q `
+
+                    => Here we can not go back to Previous Page.
+
+
+
+    -> ` less ` :   => This command is similar to the ` more ` command and have all the feature's of more command
+
+                    => The only Difference is that , Here we can go back to previous page    
+                       By using the ` UPPER ARROW KEY `
+
+                             $ less FileName                                                   
+
+   
+
+
+    -> ` who `  :   => This command mainly shows that how many Users are connected to this Linux Machine.
+                             $ who
+
+
+    -> ` whoami `:  => This command mainly shows the Name of Current User.
+                             $ whoami
+
+    -> ` hostname`: => This command mainly shows the HostName of Computer/Machine.
+                             $ hostname
+
+                    => To Get IP Address of current Linux Machine.just add ` -i ` with command ` hostname `.
+                             $ hostname -i                         
+
+    -> ` uptime ` : => This command mainly shows that How long the system is Active / Running.
+                       It Shows the time duration upto that the system is active.
+
+                             $ uptime 
+
+
+
 

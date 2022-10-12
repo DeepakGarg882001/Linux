@@ -83,7 +83,7 @@
 
                 echo Difference of A-B is : `expr $A - $B `
 
-                echo Multiplication  of "A*B" is : `expr $A /* $B `
+                echo Multiplication  of "A*B" is : `expr $A \* $B `
 
                 echo Division  of A/B is : `expr $A / $B `
 
@@ -132,9 +132,9 @@
 
                   # here we uses the Square Bracket [] insted of OpenParenthises () 
 
-                  # here ` then ` is used to exicute all the Statements which are written under it , When Condition is Correct/Satisfied
+                  # here ` then ` is used to execute all the Statements which are written under it , When Condition is Correct/Satisfied
                   
-                  # here ` else ` is used to exicute all the Statements which are written under it , When Condition is Wrong/UnSatisfied
+                  # here ` else ` is used to execute all the Statements which are written under it , When Condition is Wrong/UnSatisfied
 
                   # here ` if [ $A -gt $B ] ` we have uses the spaces between each word , which is required to write correct syntax.
 
